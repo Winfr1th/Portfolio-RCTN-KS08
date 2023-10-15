@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+:root {
+  --background-color: #272343;
+  --accent-color: #5b4eb1;
+  --accent-color2: #43576c;
+  --primary-color: #bae8e8;
+  --font-color: #dedcef;
+  --font-color2: #29292c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: var(--font-color);
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #272343;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar {
+  justify-self: flex-start;
+  padding: 2rem 0;
+}
+img {
+  height: 150px;
+}
+.pages-container {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  gap: 1rem;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.2); /* Set a transparent white background */
+  border-radius: 8px; /* Add rounded corners for the container */
+  padding: 20px; /* Add padding for spacing inside the container */
+  backdrop-filter: blur(
+    10px
+  ); /* Apply a blur effect to create the glass-like effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Add a subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.pages-container .home {
+  display: flex;
+}
+.home h2 {
+  width: 100%;
+  text-align: left;
+}
+.icon-container a {
+  padding: 1rem;
+  font-size: 2rem;
+}
